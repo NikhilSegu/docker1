@@ -4,4 +4,4 @@ RUN mkdir /home/output
 RUN touch /home/output/result_.txt
 WORKDIR /home/code
 COPY pythonScriptAssignment.py ./
-ENTRYPOINT ["/bin/sh", "-c", "python pythonScriptAssignment.py /home/data/file1.txt /home/data/file2.txt && cat /home/output/result_.txt"]
+ENTRYPOINT ["/bin/sh", "-c", "python pythonScriptAssignment.py /home/data && cat /home/output/result_.txt"]
